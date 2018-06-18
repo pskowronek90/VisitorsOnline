@@ -22,7 +22,7 @@ class Visitors_Controller extends BaseController
             $onlineGuests[] = $guestHash;
         }
  
-        Cache::put('online', $online, $visitTime);
+        Cache::put('online', $onlineGuests, $visitTime);
  
         $counter = count($online);
  
